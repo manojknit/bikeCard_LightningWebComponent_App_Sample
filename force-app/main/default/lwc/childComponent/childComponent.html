@@ -1,0 +1,20 @@
+<template>
+    <div>
+        <h1>Child Name by public variable -> {childName} </h1>
+        <div>---------public Method------------</div>
+        <div>{message}</div>
+        <div>---------Getter Setter------------</div>
+        <div>{uppercaseItemName}</div>
+        <lightning-layout>
+            <lightning-layout-item>
+                <lightning-button label="Previous" icon-name="utility:chevronleft" onclick={previousDispatcher}>
+                </lightning-button>
+            </lightning-layout-item>
+            <lightning-layout-item flexibility="grow"></lightning-layout-item>
+            <lightning-layout-item>
+                <lightning-button label="Next" icon-name="utility:chevronright" icon-position="right"
+                    onclick={nextDispatcher}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+</template>
